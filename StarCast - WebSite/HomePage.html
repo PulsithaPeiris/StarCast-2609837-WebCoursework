@@ -6,15 +6,18 @@
     </head>
     <body>
         <div class = "header">
-            <img src = "Images/StarCast-Logo.png" alt = "StarCast-logo" width = 100 height = 90>
+            <a href = "HomePage.html"><img src = "Images/StarCast-Logo/StarCast-Logo-HW.png" alt = "StarCast-logo" width = 200 height = 70></a>
             <div class = "navbar">
-                <a href = "HomePage.html">Home</a>
-                <a href = "MoviesAndRatingPage.html">Movies & Ratings</a>
-                <a href = "FeedbackPage.html">Feedback Form</a>
+                <a href = "HomePage.html" class = "hover-effect" id = "current">Home</a>
+                <a href = "MoviesAndRatingPage.html" class = "hover-effect">Movies & Ratings</a>
+                <a href = "FeedbackPage.html" class = "hover-effect">Feedback Form</a>
             </div>
             <div class = "right-side-buttons">
-                <input type = "text" id = "movie-search" name = "homepage-search">
-                <button type = "button" id = "sign-in-button">Sign In</button>
+                <div class = "movie-search">
+                    <input type = "text" id = "movie-search" name = "homepage-search" placeholder = "Search movies...">
+                    <img src = "Images/Search-Icon.png" alt = "search-icon" width = 20 height = 20>
+                </div>
+                <button type = "button" id = "sign-in-button">SIGN IN</button>
             </div>
         </div>
         <hr id = "header-seperator">

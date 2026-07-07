@@ -20,22 +20,15 @@ body{
 
 .navbar{
     display :flex;
-    gap :50px;
+    gap :40px;
     justify-self :center;
 }
 
 #header-seperator{
     border :none;
-    height: 2px;  
+    height: 1.5px;  
     background-color :#272727;
-}
-
-.navbar a{
-    text-decoration: none;
-    color :white;
-    font-family : 'Inter', sans-serif;
-    font-size :medium;
-    font-weight :bold;
+    margin :-10px;
 }
 
 .right-side-buttons{
@@ -49,8 +42,60 @@ body{
     background :none;
     font-family :'Inter' , sans-serif;
     font-weight :bold;
-    padding :8px 16px;
+    padding :10px 16px;
     color :white;
     cursor :pointer;
-    font-size :20px;
+    height :40px;
+    font-size :13px;
 }
+
+#sign-in-button{
+    border-radius :7px;
+    background-color :#E50914;
+    border :none;
+}
+
+.movie-search{
+    display :flex;
+    align-items :center;
+    position :relative;
+}
+
+.movie-search img{
+    position :absolute;
+    right :10px;
+    width :16px;
+    height :16px;
+    pointer-events :none;
+}
+
+#movie-search{
+    padding :10px 32px 10px 10px;
+    border-radius :7px;
+    width :200px;
+    height :40px;
+    background-color :#272727;
+    border :none;
+    outline :none;
+    color :white;
+}
+
+.hover-effect{
+    text-decoration: none;
+    color :white;
+    font-family : 'Inter', sans-serif;
+    font-size :medium;
+    font-weight :bold;
+    transition: color 0.3s ease; 
+}
+
+.hover-effect:hover{
+    color :#E50914;
+}
+
+#current{
+    border-bottom: 2px solid #E50914;
+    padding-bottom: 3px;
+}
+
+
