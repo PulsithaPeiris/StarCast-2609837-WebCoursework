@@ -195,13 +195,13 @@ hr{
     color :#0D0D0D;
 }
 
-.movie-recommendation{
+.movie-recommendation, .featured-movie{
     width :100%;
     padding :0px 24px 0px 24px;
     box-sizing :border-box;
 }
 
-.recommendation-header{
+.recommendation-header , .featured-movies-header{
     display :flex;
     align-items :flex-end;
     gap :10px;
@@ -209,7 +209,7 @@ hr{
     margin-top :50px;
 }
 
-.recommendation-header h1{
+.recommendation-header h1, .featured-movies-header h1{
     color :white;
     font-family : 'Bebas Neue' , 'sans-serif';
     font-size :40px;
@@ -217,14 +217,14 @@ hr{
     letter-spacing :2px;
 }
 
-.recommendation-header img{
+.recommendation-header img ,.featured-movies-header img{
     width :40px;
     height :40px;
     flex-shrink :0;
     margin-bottom :9px;
 }
 
-.recommendation-movies{
+.recommendation-movies, .featured-movies{
     display :grid;
     grid-template-columns :repeat(5,1fr);
     gap :20px;
@@ -326,7 +326,6 @@ hr{
     font-size: 12px;
     font-family: Arial, sans-serif;
 }
-
 
 
 
