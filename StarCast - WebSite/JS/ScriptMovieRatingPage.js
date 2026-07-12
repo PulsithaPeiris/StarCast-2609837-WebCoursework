@@ -1,5 +1,48 @@
 const filters = document.querySelectorAll(".filter");
 const allGenres = document.querySelector(".all-genre");
+const movieContainer = document.querySelector("#movies-container");
+
+function movieLoader (){
+    fetch("Data/Movies.xml")
+    .then(input => {
+        if(!input.ok){
+            throw new Error("XML File not found !");
+        }
+        return input.text()
+    }).then(data =>{
+        const parser = new DOMParser();
+        const xml = parser.parseFromString(data , "application/xml");
+        const movies = xml.getElementsByTagName("movie");
+        for (let movie of movies){
+            const title = movie.querySelector("title").textContent;
+            const genre = movie.querySelector("genre").textContent;
+            const year = movie.querySelector("year").textContent;
+            const stars = movie.querySelector("stars").textContent;
+            const rating = movie.querySelector("rating").textContent;
+            const image = movie.querySelector("image").textContent;
+            movieContainer.innerHTML += `
+            <div class = "movie-card" data-genre = "${genre}">
+                    <div class = "image-container">
+                        <img src = "${image}" alt = "independence-day-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">${genre}</span>
+                            <span class="movie-year">${year}</span>
+                        </div>
+                        <h3 class="movie-title">${title}</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">${stars}</span>
+                            <span class="user-score">${rating}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+    });
+
+}
 
 
 function updateMovies (){
@@ -49,3 +92,5 @@ filters.forEach(button => {
         updateMovies();
     });
 });
+
+movieLoader();

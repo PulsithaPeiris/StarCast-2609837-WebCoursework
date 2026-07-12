@@ -1,0 +1,182 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<movies>
+    <movie>
+        <title>Michael</title>
+        <genre>DRAMA</genre>
+        <year>2026</year>
+        <stars>⭐⭐⭐⭐</stars>
+        <rating>4.0 / 5</rating>
+        <image>Images/Movie-Covers/Michael-Cover.jpg</image>
+    </movie>
+
+    <movie>
+        <title>Independence Day</title>
+        <genre>ACTION</genre>
+        <year>1996</year>
+        <stars>⭐⭐⭐⭐</stars>
+        <rating>4.0 / 5</rating>
+        <image>Images/Movie-Covers/Independence-Day-Cover.jpg</image>
+    </movie>
+
+    <movie>
+        <title>Der Astronaut - Project Hail Mary</title>
+        <genre>SCIENCE FICTION</genre>
+        <year>2026</year>
+        <stars>⭐⭐⭐⭐⭐</stars>
+        <rating>5.0 / 5</rating>
+        <image>Images/Movie-Covers/Der-Astronaut-Project-Hail-Mary.jpeg</image>
+    </movie>
+
+    <movie>
+        <title>Uncle Frank</title>
+        <genre>COMEDY</genre>
+        <year>2020</year>
+        <stars>⭐⭐⭐</stars>
+        <rating>3.0 / 5</rating>
+        <image>Images/Movie-Covers/Uncle-Frank-Cover.jpeg</image>
+    </movie>
+
+    <movie>
+        <title>F1: The Movie</title>
+        <genre>ACTION</genre>
+        <year>2025</year>
+        <stars>⭐⭐⭐⭐⭐</stars>
+        <rating>5.0 / 5</rating>
+        <image>Images/Movie-Covers/F1-The-Movie-Cover.jpeg</image>
+    </movie>
+
+    <movie>
+        <title>Interstellar</title>
+        <genre>SCIENCE FICTION</genre>
+        <year>2014</year>
+        <stars>⭐⭐⭐⭐⭐</stars>
+        <rating>5.0 / 5</rating>
+        <image>Images/Movie-Covers/Interstellar-Cover.jpg</image>
+    </movie>
+
+    <movie>
+        <title>JUJUTSU KAISEN Season 3 - The Culling Game</title>
+        <genre>ACTION</genre>
+        <year>2026</year>
+        <stars>⭐⭐⭐⭐</stars>
+        <rating>4.0 / 5</rating>
+        <image>Images/Movie-Covers/JJK-Season-3-Cover.jpg</image>
+    </movie>
+
+    <movie>
+        <title>Bad Boys For Life</title>
+        <genre>COMEDY</genre>
+        <year>2020</year>
+        <stars>⭐⭐⭐</stars>
+        <rating>3.0 / 5</rating>
+        <image>Images/Movie-Covers/Bad-Boys-For-Life-Cover.jpg</image>
+    </movie>
+
+    <movie>
+        <title>Star Wars: Episode III – Revenge of the Sith</title>
+        <genre>ACTION</genre>
+        <year>2005</year>
+        <stars>⭐⭐⭐⭐⭐</stars>
+        <rating>5.0 / 5</rating>
+        <image>Images/Movie-Covers/Revenge-of-The-Sith-Cover.jpg</image>
+    </movie>
+
+    <movie>
+        <title>Peaky Blinders</title>
+        <genre>DRAMA</genre>
+        <year>2013-2022</year>
+        <stars>⭐⭐⭐⭐⭐</stars>
+        <rating>5.0 / 5</rating>
+        <image>Images/Movie-Covers/Peaky-Blinders-Cover.jpeg</image>
+    </movie>
+
+    <movie>
+        <title>Spider-Man: No Way Home</title>
+        <genre>ACTION</genre>
+        <year>2021</year>
+        <stars>⭐⭐⭐⭐</stars>
+        <rating>4.0 / 5</rating>
+        <image>Images/Movie-Covers/Spider-Man-No-Way-Home-Cover.jpg</image>
+    </movie>
+
+    <movie>
+        <title>The Matrix</title>
+        <genre>SCIENCE FICTION</genre>
+        <year>1999</year>
+        <stars>⭐⭐⭐⭐⭐</stars>
+        <rating>5.0 / 5</rating>
+        <image>Images/Movie-Covers/The-Matrix-Cover.jpeg</image>
+    </movie>
+
+    <movie>
+        <title>Gravity</title>
+        <genre>SCIENCE FICTION</genre>
+        <year>2013</year>
+        <stars>⭐⭐⭐</stars>
+        <rating>3.0 / 5</rating>
+        <image>Images/Movie-Covers/Gravity-Cover.jpg</image>
+    </movie>
+
+    <movie>
+        <title>District 9</title>
+        <genre>SCIENCE FICTION</genre>
+        <year>2009</year>
+        <stars>⭐⭐⭐⭐</stars>
+        <rating>4.0 / 5</rating>
+        <image>Images/Movie-Covers/District-9-Cover.jpg</image>
+    </movie>
+
+    <movie>
+        <title>The Godfather</title>
+        <genre>DRAMA</genre>
+        <year>1972</year>
+        <stars>⭐⭐⭐⭐⭐</stars>
+        <rating>5.0 / 5</rating>
+        <image>Images/Movie-Covers/The-Godfather-Cover.jpg</image>
+    </movie>
+
+    <movie>
+        <title>Due Date</title>
+        <genre>COMEDY</genre>
+        <year>2010</year>
+        <stars>⭐⭐⭐</stars>
+        <rating>3.0 / 5</rating>
+        <image>Images/Movie-Covers/Due-Date-Cover.jpeg</image>
+    </movie>
+
+    <movie>
+        <title>3 Idiots</title>
+        <genre>COMEDY</genre>
+        <year>2009</year>
+        <stars>⭐⭐⭐⭐⭐</stars>
+        <rating>5.0 / 5</rating>
+        <image>Images/Movie-Covers/3-Idiots-Cover.jpg</image>
+    </movie>
+
+    <movie>
+        <title>Batman Begins</title>
+        <genre>DRAMA</genre>
+        <year>2005</year>
+        <stars>⭐⭐⭐⭐⭐</stars>
+        <rating>5.0 / 5</rating>
+        <image>Images/Movie-Covers/Batman-Begins-Cover.jpg</image>
+    </movie>
+
+    <movie>
+        <title>There Will Be Blood</title>
+        <genre>DRAMA</genre>
+        <year>2007</year>
+        <stars>⭐⭐⭐⭐</stars>
+        <rating>4.0 / 5</rating>
+        <image>Images/Movie-Covers/There-Will-Be-Blood-Cover.jpg</image>
+    </movie>
+
+    <movie>
+        <title>Home Alone</title>
+        <genre>COMEDY</genre>
+        <year>1990</year>
+        <stars>⭐⭐⭐⭐⭐</stars>
+        <rating>5.0 / 5</rating>
+        <image>Images/Movie-Covers/Home-Alone-Cover.jpg</image>
+    </movie>
+</movies>
