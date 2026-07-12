@@ -195,7 +195,7 @@ hr{
     color :#0D0D0D;
 }
 
-.movie-recommendation, .featured-movie{
+.movie-recommendation, .featured-movie ,.movies{
     width :100%;
     padding :0px 24px 0px 24px;
     box-sizing :border-box;
@@ -224,7 +224,7 @@ hr{
     margin-bottom :9px;
 }
 
-.recommendation-movies, .featured-movies{
+.recommendation-movies, .featured-movies, .movies-container{
     display :grid;
     grid-template-columns :repeat(5,1fr);
     gap :20px;
@@ -243,6 +243,15 @@ hr{
     gap :12px;
     cursor :pointer;
     transition :transform 0.25s ease-in-out, border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    transition: opacity 0.3s ease;
+}
+
+.movie-card.hidden{
+    opacity :0;
+    pointer-events :none;
+    position :absolute;
+    transform :scale(0.8);
+    display :none;
 }
 
 .movie-card:hover{

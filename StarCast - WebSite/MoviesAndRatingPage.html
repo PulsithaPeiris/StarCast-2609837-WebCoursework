@@ -24,11 +24,355 @@
         <div class = "filter-section">
             <div class = "filters">
                 <p>Filter Genre :</p>
-                <button type = "button" class = "filter all-genre active">All Genres</button>
-                <button type = "button" class = "filter">Action</button>
-                <button type = "button" class = "filter">Comedy</button>
-                <button type = "button" class = "filter">Drama</button>
-                <button type = "button" class = "filter">Science Fiction</button>
+                <button type = "button" class = "filter all-genre active" data-genre = "allGenre">All Genres</button>
+                <button type = "button" class = "filter" data-genre = "action">Action</button>
+                <button type = "button" class = "filter" data-genre = "comedy">Comedy</button>
+                <button type = "button" class = "filter" data-genre = "drama">Drama</button>
+                <button type = "button" class = "filter" data-genre = "scifi">Science Fiction</button>
+            </div>
+        </div>
+        <div class = "movies">
+            <div class = "movies-container">
+                <div class = "movie-card" data-genre = "drama">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/Michael-Cover.jpg" alt = "michael-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">DRAMA</span>
+                            <span class="movie-year">2026</span>
+                        </div>
+                        <h3 class="movie-title">Michael</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐⭐</span>
+                            <span class="user-score">4.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "action">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/Independence-Day-Cover.jpg" alt = "independence-day-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">ACTION</span>
+                            <span class="movie-year">1996</span>
+                        </div>
+                        <h3 class="movie-title">Independence Day</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐⭐</span>
+                            <span class="user-score">4.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "scifi">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/Der-Astronaut-Project-Hail-Mary.jpeg" alt = "der-astronaut-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">SCIENCE FICTION</span>
+                            <span class="movie-year">2026</span>
+                        </div>
+                        <h3 class="movie-title">Der Astronaut - Project Hail Mary</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="user-score">5.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "comedy">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/Uncle-Frank-Cover.jpeg" alt = "uncle-frank-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">COMEDY</span>
+                            <span class="movie-year">2020</span>
+                        </div>
+                        <h3 class="movie-title">Uncle Frank</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐</span>
+                            <span class="user-score">3.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "action">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/F1-The-Movie-Cover.jpeg" alt = "f1-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">ACTION</span>
+                            <span class="movie-year">2025</span>
+                        </div>
+                        <h3 class="movie-title">F1: The Movie</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="user-score">5.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "scifi">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/Interstellar-Cover.jpg" alt = "interstellar-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">SCIENCE FICTION</span>
+                            <span class="movie-year">2014</span>
+                        </div>
+                        <h3 class="movie-title">Interstellar</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="user-score">5.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "action">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/JJK-Season-3-Cover.jpg" alt = "jjk-season-3-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">ACTION</span>
+                            <span class="movie-year">2026</span>
+                        </div>
+                        <h3 class="movie-title">JUJUTSU KAISEN Season 3 - The Culling Game</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐⭐</span>
+                            <span class="user-score">4.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "comedy">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/Bad-Boys-For-Life-Cover.jpg" alt = "bad-boys-for-life-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">COMEDY</span>
+                            <span class="movie-year">2020</span>
+                        </div>
+                        <h3 class="movie-title">Bad Boys For Life</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐</span>
+                            <span class="user-score">3.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "action">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/Revenge-of-The-Sith-Cover.jpg" alt = "starwars-revenge-of-the-sith-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">ACTION</span>
+                            <span class="movie-year">2005</span>
+                        </div>
+                        <h3 class="movie-title">Star Wars: Episode III – Revenge of the Sith</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="user-score">5.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "drama">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/Peaky-Blinders-Cover.jpeg" alt = "peaky-blinders-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">DRAMA</span>
+                            <span class="movie-year">2013-2022</span>
+                        </div>
+                        <h3 class="movie-title">Peaky Blinders</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="user-score">5.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "action">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/Spider-Man-No-Way-Home-Cover.jpg" alt = "spider-man-no-way-home-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">ACTION</span>
+                            <span class="movie-year">2021</span>
+                        </div>
+                        <h3 class="movie-title">Spider-Man: No Way Home</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐⭐</span>
+                            <span class="user-score">4.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "scifi">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/The-Matrix-Cover.jpeg" alt = "the-matrix-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">SCIENCE FICTION</span>
+                            <span class="movie-year">1999</span>
+                        </div>
+                        <h3 class="movie-title">The Matrix</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="user-score">5.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "scifi">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/Gravity-Cover.jpg" alt = "gravity-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">SCIENCE FICTION</span>
+                            <span class="movie-year">2013</span>
+                        </div>
+                        <h3 class="movie-title">Gravity</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐</span>
+                            <span class="user-score">3.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "scifi">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/District-9-Cover.jpg" alt = "district-9-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">SCIENCE FICTION</span>
+                            <span class="movie-year">2009</span>
+                        </div>
+                        <h3 class="movie-title">District 9</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐⭐</span>
+                            <span class="user-score">4.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "drama">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/The-Godfather-Cover.jpg" alt = "the-godfather-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">DRAMA</span>
+                            <span class="movie-year">1972</span>
+                        </div>
+                        <h3 class="movie-title">The Godfather</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="user-score">5.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "comedy">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/Due-Date-Cover.jpeg" alt = "due-date-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">COMEDY</span>
+                            <span class="movie-year">2010</span>
+                        </div>
+                        <h3 class="movie-title">Due Date</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐</span>
+                            <span class="user-score">3.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "comedy">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/3-Idiots-Cover.jpg" alt = "3-idiots-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">COMEDY</span>
+                            <span class="movie-year">2009</span>
+                        </div>
+                        <h3 class="movie-title">3 Idiots</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="user-score">5.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "drama">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/Batman-Begins-Cover.jpg" alt = "batman-begins-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">DRAMA</span>
+                            <span class="movie-year">2005</span>
+                        </div>
+                        <h3 class="movie-title">Batman Begins</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="user-score">5.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "drama">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/There-Will-Be-Blood-Cover.jpg" alt = "there-will-be-blood-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">DRAMA</span>
+                            <span class="movie-year">2007</span>
+                        </div>
+                        <h3 class="movie-title">There Will Be Blood</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐⭐</span>
+                            <span class="user-score">4.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "movie-card" data-genre = "comedy">
+                    <div class = "image-container">
+                        <img src = "Images/Movie-Covers/Home-Alone-Cover.jpg" alt = "home-alone-cover">
+                    </div>
+                    <div class = "movie-meta-data">
+                        <div class="meta-row">
+                            <span class="movie-genre">COMEDY</span>
+                            <span class="movie-year">1990</span>
+                        </div>
+                        <h3 class="movie-title">Home Alone</h3>
+                        <hr id ="divider">
+                        <div class="stars-row">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="user-score">5.0 / 5</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     <script src = "JS/ScriptMovieRatingPage.js"></script>
