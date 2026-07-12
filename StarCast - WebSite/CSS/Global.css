@@ -14,7 +14,7 @@ body{
     width :100%;
     justify-content :space-between;
     align-items :center;
-    padding :16px 24px
+    padding :16px 24px;
 }
 
 .bebas-neue-regular {
@@ -31,7 +31,7 @@ body{
 
 hr{
     border :none;
-    height: 1.5px;  
+    height :1.5px;  
     background-color :#272727;
     margin-bottom :-10px;
     margin-top :-10px;
@@ -88,12 +88,12 @@ hr{
 }
 
 .hover-effect{
-    text-decoration: none;
+    text-decoration :none;
     color :white;
-    font-family : 'Inter', sans-serif;
+    font-family :'Inter', sans-serif;
     font-size :medium;
     font-weight :bold;
-    transition: color 0.3s ease; 
+    transition :color 0.3s ease; 
 }
 
 .hover-effect:hover{
@@ -101,8 +101,8 @@ hr{
 }
 
 #current{
-    border-bottom: 2px solid #E50914;
-    padding-bottom: 3px;
+    border-bottom :2px solid #E50914;
+    padding-bottom :3px;
 }
 
 .welcome-section{
@@ -118,11 +118,11 @@ hr{
             rgba(0,0,0,.4) 75%,
             rgba(0,0,0,0) 100%
         ),url('../Images/Banners/StarCast-Welcome-Banner.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    aspect-ratio: 16 / 7;
-    padding:0 100x;
+    background-size :cover;
+    background-position :center;
+    background-repeat :no-repeat;
+    aspect-ratio :16 / 7;
+    padding :0 100x;
     min-height :700px;
 }
 
@@ -130,9 +130,9 @@ hr{
     display :flex;
     flex-direction :column;
     align-items :flex-start;
-    text-align:left;
+    text-align :left;
     padding :0px 0px 0px 40px;
-    max-width:520px;
+    max-width :520px;
 }
 
 .welcome-left-side h1{
@@ -151,7 +151,7 @@ hr{
     font-size :25px;
     padding-top :15px;
     padding-bottom :25px;
-    line-height:1.7;
+    line-height :1.7;
     width :800px;
 }
 
@@ -171,7 +171,7 @@ hr{
     font-weight :bold;
     padding :15px 30px;
     border-radius :5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition :background-color 0.3s ease, color 0.3s ease;
 
 }
 
@@ -211,7 +211,7 @@ hr{
 
 .recommendation-header h1, .featured-movies-header h1{
     color :white;
-    font-family : 'Bebas Neue' , 'sans-serif';
+    font-family :'Bebas Neue' , 'sans-serif';
     font-size :40px;
     margin :0;
     letter-spacing :2px;
@@ -254,10 +254,10 @@ hr{
 .image-container{
     width :100%;
     aspect-ratio :2 / 3; 
-    position: relative; 
-    background-color: #272727;
-    border-radius: 5px;
-    overflow: hidden;
+    position :relative; 
+    background-color :#272727;
+    border-radius :5px;
+    overflow :hidden;
 }
 
 .image-container img{
@@ -274,57 +274,57 @@ hr{
 }
 
 .meta-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 4px;
+    display :flex;
+    justify-content :space-between;
+    align-items :center;
+    margin-bottom :4px;
 }
 
 .movie-genre {
-    color: #E50914;
-    font-size: 11px;
-    font-weight: bold;
-    font-family: 'Arial', 'sans-serif';
-    letter-spacing: 0.5px;
+    color :#E50914;
+    font-size :11px;
+    font-weight :bold;
+    font-family :'Arial', 'sans-serif';
+    letter-spacing :0.5px;
 }
 
 .movie-year {
-    color: #888888;
-    font-size: 12px;
-    font-family: 'Arial', 'sans-serif';
+    color :#888888;
+    font-size :12px;
+    font-family :'Arial', 'sans-serif';
 }
 
 .movie-title {
-    color: white;
-    font-size: 18px;
-    margin: 0;
-    font-family: 'Arial', 'sans-serif';
-    font-weight: 600;
+    color :white;
+    font-size :18px;
+    margin :0;
+    font-family :'Arial', 'sans-serif';
+    font-weight :600;
     margin-bottom :auto;
 }
 
 #divider {
-    border: 0;
-    height: 1px;
+    border :0;
+    height :1px;
     background :white;
-    margin: 12px 0 10px 0;
+    margin :12px 0 10px 0;
 }
 
 .stars-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: auto;
+    display :flex;
+    justify-content :space-between;
+    align-items :center;
+    margin-top :auto;
 }
 
 .stars {
-    font-size: 12px;
+    font-size :12px;
 }
 
 .user-score {
-    color: #888888;
-    font-size: 12px;
-    font-family: 'Arial', 'sans-serif';
+    color :#888888;
+    font-size :12px;
+    font-family :'Arial', 'sans-serif';
 }
 
 .footer{
@@ -335,10 +335,10 @@ hr{
 .footer-columns {
     display :flex;
     justify-content :space-between;
-    align-items: start;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    width: 100%;
+    align-items :start;
+    padding-top :20px;
+    padding-bottom :10px;
+    width :100%;
 }
 
 .footer-top-divider{
@@ -353,8 +353,8 @@ hr{
     display :flex;
     flex-direction :row;
     gap :8px;
-    margin: 0;
-    padding: 0;
+    margin :0;
+    padding :0;
     flex-shrink :0;
 }
 
@@ -374,5 +374,50 @@ hr{
     padding-top :8px;
     text-decoration :none;
     cursor :pointer;
+}
+
+.filter-section{
+    display :flex;
+    justify-self :center;
+    width :calc(100% - 48px);
+    height :60px;
+    margin-top :20px;
+    border-radius :5px;
+}
+
+.filters{
+    display :flex;
+    gap :16px;
+    align-items :center;
+}
+
+.filters p{
+    font-family :'Inter' , 'sans-serif';
+    color :white;
+    padding-left :20px;
+    font-size :large;
+    font-weight :bold;
+}
+
+.filter{
+    border-radius :5px;
+    background-color :#303030;
+    border :none;
+    padding :10px 16px;
+    font-family :'Inter' , 'sans-serif';
+    color :white;
+    font-weight :bold;
+    font-size :medium;
+    height :40px;
+    cursor :pointer;
+    transition :background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter.active {
+    background-color :#E50914;
+}
+
+.filter:hover{
+    background-color :#ab0000;
 }
 
