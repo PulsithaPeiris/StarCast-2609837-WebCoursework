@@ -48,7 +48,7 @@ function movieLoader (){
 function updateMovies (){
     const movies = document.querySelectorAll(".movie-card");
     const activeFilters = document.querySelectorAll(".filter.active");
-    const activeGenre = []
+    const activeGenre = [];
     activeFilters.forEach(button => {
         activeGenre.push(button.dataset.genre);
     });
