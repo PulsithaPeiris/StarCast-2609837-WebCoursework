@@ -560,18 +560,24 @@ form > div {
     align-items :center;
 }
 
-.submit input{
+.submit button{
     border :none;
     cursor :pointer;
     background-color :#E50914;
     font-family: 'Bebas Neue', 'sans-serif';
     font-size :20px;
     font-weight :bold;
+    color :white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius :5px;
+    width :100%
 }
 
 .submit img{
-    position :absolute;
-    right :880px;
     width :18px;
     height :18px;
 }
@@ -583,3 +589,20 @@ form > div {
     display :block;
 }
 
+#movieSuggestions{
+    background-color :#303030;
+    border:1px solid white;
+    width:100%;
+    color :white;
+}
+
+#movieSuggestions p{
+    margin:0;
+    padding:10px;
+    cursor:pointer;
+    border-bottom:1px solid white;
+}
+
+#movieSuggestions p:hover{
+    background-color :#888888;
+}

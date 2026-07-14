@@ -1,3 +1,44 @@
+const movieInput = document.querySelector("#movieTitle");
+const movieSuggestion = document.querySelector("#movieSuggestions");
+let movieTitle = [];
+
+function loadMovieTitle (){
+    fetch("Data/Movies.xml")
+    .then(input => {
+        if(!input.ok){
+            throw new Error("XML File not found !");
+        }
+        return input.text()
+    }).then(data =>{
+        const parser = new DOMParser();
+        const xml = parser.parseFromString(data , "application/xml");
+        const movies = xml.getElementsByTagName("movie");
+        for (let movie of movies){
+            const title = movie.querySelector("title").textContent;
+            movieTitle.push(title);
+        }
+    });
+}
+
+loadMovieTitle();
+
+movieInput.addEventListener("input", () => {
+    const value = movieInput.value.toLowerCase();
+    movieSuggestion.innerHTML = "";
+    if (value == "") {return;}
+    const filteredMovies = movieTitle.filter(movie => movie.toLowerCase().includes(value));
+    filteredMovies.forEach(movie => {
+        const option = document.createElement("p");
+        option.textContent = movie;
+        option.addEventListener("click", () => {
+            movieInput.value = movie;
+            movieSuggestion.innerHTML = "";
+        });
+        movieSuggestion.appendChild(option);
+    });
+})
+
+
 const form = document.querySelector("#feedback-form");
 form.addEventListener("submit" , (event) => {
     event.preventDefault();
@@ -56,6 +97,11 @@ form.addEventListener("submit" , (event) => {
     }
 
     if(!isValid){ return; }
+    alert("Review submitted successfully!");
+    form.reset();
+    document.querySelectorAll(".error").forEach(error => {
+        error.textContent = "";
+    });
 
     
 });

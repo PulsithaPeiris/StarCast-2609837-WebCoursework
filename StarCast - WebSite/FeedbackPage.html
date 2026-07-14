@@ -46,6 +46,7 @@
                     <div class = "form-movieTitle">
                         <label for = "movieTitle">Movie title</label>
                         <input type = "text" id = "movieTitle" name = "movieTitle">
+                        <div id = "movieSuggestions"></div>
                         <small class = "error" id = "titleError"></small>
                     </div>
                     <div class = "form-movieGenre">
@@ -91,8 +92,10 @@
                         <small class = "error" id = "msgError"></small>
                     </div> 
                     <div class = "submit">
-                        <input type = "submit" id = "submit" value = "Submit Review">
-                        <img src = "Images/Icons/Send-Icon.png" alt = "send-review-icon" width = 30 height = 30>
+                        <button type = "submit" id = "submit">
+                            <span>Submit Review</span>
+                            <img src = "Images/Icons/Send-Icon.png" alt = "send-review-icon" width = 30 height = 30>
+                        </button> 
                     </div>
                 </form>
             </div>
