@@ -75,7 +75,7 @@ form.addEventListener("submit" , (event) => {
         document.querySelector("#emailError").textContent = "Please enter a valid email address !";
         isValid = false;
     }
-    if(title == ""){
+    if(title == "" || !movieTitle.includes(title)){
         document.querySelector("#titleError").textContent = "Please enter a valid movie title !";
         isValid = false;
     }
