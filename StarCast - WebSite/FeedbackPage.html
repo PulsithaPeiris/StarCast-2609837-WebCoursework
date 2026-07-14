@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StarCast | Where Every Story Finds Its Audience | Feeback Form</title>
+        <link rel = "stylesheet" href = "CSS/Global.css">
+    </head>
+    <body>
+        <div class = "header">
+            <a href = "HomePage.html"><img src = "Images/StarCast-Logo/StarCast-Logo-HW.png" alt = "StarCast-logo" width = 200 height = 70></a>
+            <div class = "navbar">
+                <a href = "HomePage.html" class = "hover-effect">Home</a>
+                <a href = "MoviesAndRatingPage.html" class = "hover-effect">Movies & Ratings</a>
+                <a href = "FeedbackPage.html" class = "hover-effect" id = "current">Feedback Form</a>
+            </div>
+            <div class = "right-side-buttons">
+                <div class = "movie-search">
+                    <input type = "text" id = "movie-search" name = "homepage-search" placeholder = "Search movies...">
+                    <img src = "Images/Icons/Search-Icon.png" alt = "search-icon" width = 20 height = 20>
+                </div>
+                <button type = "button" id = "sign-in-button">SIGN IN</button>
+            </div>
+        </div>
+        <hr>
+        <div class = "feedback-form">
+            <div class = "form-header">
+                <h1>FeedBack and Reviews</h1>
+                <p>Help us and the community by sharing your latest cinematic experiences.</p>
+            </div>
+            <div class = "form-body">
+                <form>
+                    <div class = "form-fName">
+                        <label for = "fName">First name</label>
+                        <input type = "text" id = "fName" name = "fName" placeholder = "Your first name">
+                    </div>
+                    <div class = "form-lName">
+                        <label for = "lName">Last name</label>
+                        <input type = "text" id = "lName" name = "lName" placeholder = "Your last name">
+                    </div>
+                    <div class = "form-email">
+                        <label for = "email">Email</label>
+                        <input type = "email" id = "email" name = "email" placeholder = "eg : yourname@email.com">
+                    </div>
+                    <div class = "form-movieTitle">
+                        <label for = "movieTitle">Movie title</label>
+                        <input type = "text" id = "movieTitle" name = "movieTitle">
+                    </div>
+                    <div class = "form-movieGenre">
+                        <label for = "movieGenre">Choose movie genre</label>
+                        <select name = "movieGenre" id = "movieGenre">
+                            <option value = "" disabled selected>-- Select an option --</option>
+                            <option value = "COMEDY">Comedy</option>
+                            <option value = "ACTION">Action</option>
+                            <option value = "DRAMA">Drama</option>
+                            <option value = "SCIENCE FICTION">Science Fiction</option>
+                        </select>
+                    </div>
+                    <div class = "form-rating">
+                        <fieldset>
+                            <legend>Overall rating</legend>
+                            <input type = "radio" id = "oneStar" name = "rating" value = "oneStar">
+                            <label for = "oneStar">1 Star</label>
+                            <input type = "radio" id = "twoStar" name = "rating" value = "twoStar">
+                            <label for = "twoStar">2 Star</label>
+                            <input type = "radio" id = "threeStar" name = "rating" value = "threeStar">
+                            <label for = "threeStar">3 Star</label>
+                            <input type = "radio" id = "fourStar" name = "rating" value = "fourStar">
+                            <label for = "fourStar">4 Star</label>
+                            <input type = "radio" id = "fiveStar" name = "rating" value = "fiveStar">
+                            <label for = "fiveStar">5 Star</label>
+                        </fieldset> 
+                    </div>
+                    <div class = "form-recommendation">
+                        <fieldset>
+                            <legend>Will you recommend this movie to another person</legend>
+                            <input type = "radio" id = "recommendationYes" name = "recommendation" value = "yes">
+                            <label for = "recommendationYes">Yes</label>
+                            <input type = "radio" id = "recommendationNo" name = "recommendation" value = "no">
+                            <label for = "recommendationNo">No</label>
+                        </fieldset>
+                    </div>
+                    <div class = "form-review">
+                        <label for = "writtenReview">Write a review</label>
+                        <textarea id = "writtenReview" name="feedback" rows="4" cols="100" placeholder = "Share details about the plot, acting, final twist and overall opinion about the movie"></textarea>
+                    </div> 
+                    <div class = "submit">
+                        <input type = "submit" id = "submit" value = "Submit Review">
+                        <img src = "Images/Icons/Send-Icon.png" alt = "send-review-icon" width = 30 height = 30>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class = "footer">
+            <hr class = "footer-top-divider">
+            <div class = "footer-columns">
+                <div class = "left-side-container">
+                    <img src = "Images/StarCast-Logo/StarCast-Logo-HW.png" alt = "StarCast-logo" width = 100 height = 35>
+                    <p>Where Every Story Finds Its Audience</p>
+                    <p id = "copyright-text">© 2026 StarCast. All rights reserved.</p>
+                </div>
+                <div class = "right-side-container">
+                    <a href = "HomePage.html">Home |</a>
+                    <a href = "MoviesAndRatingPage.html"> Movies & Ratings | </a>
+                    <a href = "FeedbackPage.html">Feedback Form</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -430,3 +430,149 @@ hr{
     background-color :#ab0000;
 }
 
+.feedback-form{
+    margin-top :50px;
+    justify-self :center;
+}
+
+.form-header{
+    justify-self :center;
+}
+
+.form-header h1 {
+    color :white;
+    font-family: 'Bebas Neue', 'sans-serif';
+    text-align :center;
+}
+
+.form-header p {
+    color :#777777;
+    font-family: 'Inter', 'sans-serif';
+    text-align :center;
+}
+
+.form-body{
+    width :1000px;
+    min-height :1000px;
+    background-color :#272727;
+    display :flex;
+    border-radius :5px;
+    padding : 30px 70px;
+    margin: 30px auto;
+    border :5px;
+    border-color :#272727;
+    
+}
+
+.form-body input{
+    border :none;
+    border-radius :5px;
+    padding :10px 10px;
+    width :100%;
+    height :50px;
+    background-color :#303030;
+    color :white;
+    outline :none;
+    font-family :'Inter' , 'sans-serif';
+    font-size :medium;
+}
+
+.form-body label, .form-rating legend, .form-recommendation legend{
+    color :aliceblue;
+    font-family :'Arial' , 'sans-serif';
+    font-weight :bold;
+    font-size :17px;
+    margin-bottom :5px;
+}
+
+form > div {
+    margin-bottom :30px;
+    display :flex;
+    flex-direction :column;
+}
+
+.form-recommendation input[type="radio"] {
+    appearance :none;
+    -webkit-appearance :none;
+    width :16px;
+    height :16px;
+    border :2px solid #888888;
+    border-radius :3px;
+    background-color :#303030;
+    cursor :pointer;
+    position:relative;
+    padding :0px 0px 0px 10px;
+}
+
+.form-recommendation input[type="radio"]:checked {
+    background-color :#E50914;
+    border-color :#888888;
+}
+
+.form-rating fieldset, .form-recommendation fieldset{
+    border :none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.form-rating fieldset label, .form-recommendation fieldset label{
+    margin-bottom :-1px;
+
+}
+
+.form-body textarea{
+    border :none;
+    border-radius :5px;
+    padding :10px 5px;
+    width :100%;
+    height :200px;
+    background-color :#303030;
+    color :white;
+    outline :none;
+    font-family :'Inter' , 'sans-serif';
+    font-size :medium;
+}
+
+.form-rating input[type="radio"]{
+    width :16px;
+    height :16px;
+    accent-color :#E50914;
+}
+
+.form-movieGenre select{
+    border :none;
+    border-radius :5px;
+    padding :10px 5px;
+    width :100%;
+    height :50px;
+    background-color :#303030;
+    color :white;
+    outline :none;
+    font-family :'Inter' , 'sans-serif';
+    font-size :medium;  
+}
+
+.submit{
+    display :flex;
+    flex-direction :row;
+    align-items :center;
+}
+
+.submit input{
+    border :none;
+    cursor :pointer;
+    background-color :#E50914;
+    font-family: 'Bebas Neue', 'sans-serif';
+    font-size :20px;
+    font-weight :bold;
+}
+
+.submit img{
+    position :absolute;
+    right :880px;
+    width :18px;
+    height :18px;
+}
+
