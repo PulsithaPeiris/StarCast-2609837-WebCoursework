@@ -40,10 +40,15 @@ function movieLoader (){
                 </div>
             `;
         }
+        const param = new URLSearchParams(window.location.search);
+        const search = param.get("search");
+        if (search){
+            document.querySelector(".movie-search").value = search;
+            searchMovie(search);
+        }
     });
 
 }
-
 
 function updateMovies (){
     const movies = document.querySelectorAll(".movie-card");
@@ -93,4 +98,21 @@ filters.forEach(button => {
     });
 });
 
+function searchMovie(searchTerm){
+    const movies = document.querySelectorAll(".movie-card");
+    movies.forEach(movie => {
+        const title = movie.querySelector(".movie-title").textContent.toLowerCase();
+        if (title.includes(searchTerm.toLowerCase())){
+            movie.classList.remove("hidden")
+        }
+        else { movie.classList.add("hidden"); }
+    });
+}
+
 movieLoader();
+
+const movieSearch = document.querySelector("#movie-search");
+movieSearch.addEventListener("input", () => {
+    searchMovie(movieSearch.value.trim())
+});
+
