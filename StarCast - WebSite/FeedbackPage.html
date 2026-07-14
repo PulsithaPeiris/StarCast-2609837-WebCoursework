@@ -27,22 +27,26 @@
                 <p>Help us and the community by sharing your latest cinematic experiences.</p>
             </div>
             <div class = "form-body">
-                <form>
+                <form id = "feedback-form">
                     <div class = "form-fName">
                         <label for = "fName">First name</label>
                         <input type = "text" id = "fName" name = "fName" placeholder = "Your first name">
+                        <small class = "error" id = "fNameError"></small>
                     </div>
                     <div class = "form-lName">
                         <label for = "lName">Last name</label>
                         <input type = "text" id = "lName" name = "lName" placeholder = "Your last name">
+                        <small class = "error" id = "lNameError"></small>
                     </div>
                     <div class = "form-email">
                         <label for = "email">Email</label>
-                        <input type = "email" id = "email" name = "email" placeholder = "eg : yourname@email.com">
+                        <input type = "text" id = "email" name = "email" placeholder = "eg : yourname@email.com">
+                        <small class = "error" id = "emailError"></small>
                     </div>
                     <div class = "form-movieTitle">
                         <label for = "movieTitle">Movie title</label>
                         <input type = "text" id = "movieTitle" name = "movieTitle">
+                        <small class = "error" id = "titleError"></small>
                     </div>
                     <div class = "form-movieGenre">
                         <label for = "movieGenre">Choose movie genre</label>
@@ -53,6 +57,7 @@
                             <option value = "DRAMA">Drama</option>
                             <option value = "SCIENCE FICTION">Science Fiction</option>
                         </select>
+                        <small class = "error" id = "genreError"></small>
                     </div>
                     <div class = "form-rating">
                         <fieldset>
@@ -68,6 +73,7 @@
                             <input type = "radio" id = "fiveStar" name = "rating" value = "fiveStar">
                             <label for = "fiveStar">5 Star</label>
                         </fieldset> 
+                        <small class = "error" id = "ratingError"></small>
                     </div>
                     <div class = "form-recommendation">
                         <fieldset>
@@ -77,10 +83,12 @@
                             <input type = "radio" id = "recommendationNo" name = "recommendation" value = "no">
                             <label for = "recommendationNo">No</label>
                         </fieldset>
+                        <small class = "error" id = "recommendError"></small>
                     </div>
                     <div class = "form-review">
                         <label for = "writtenReview">Write a review</label>
                         <textarea id = "writtenReview" name="feedback" rows="4" cols="100" placeholder = "Share details about the plot, acting, final twist and overall opinion about the movie"></textarea>
+                        <small class = "error" id = "msgError"></small>
                     </div> 
                     <div class = "submit">
                         <input type = "submit" id = "submit" value = "Submit Review">
@@ -104,5 +112,6 @@
                 </div>
             </div>
         </div>
+        <script src = "JS/FeedbackPage.js"></script>
     </body>
 </html>

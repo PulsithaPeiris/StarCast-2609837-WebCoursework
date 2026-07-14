@@ -576,3 +576,10 @@ form > div {
     height :18px;
 }
 
+.error{
+    color :#E50914;
+    font-size :0.85rem;
+    margin-top :5px;
+    display :block;
+}
+
