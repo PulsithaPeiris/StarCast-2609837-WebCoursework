@@ -452,8 +452,10 @@ hr{
 }
 
 .form-body{
-    width :1000px;
+    width :90%;
+    max-width :1000px;
     min-height :1000px;
+    height :auto;
     background-color :#272727;
     display :flex;
     border-radius :5px;
