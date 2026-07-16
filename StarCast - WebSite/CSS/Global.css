@@ -338,6 +338,8 @@ hr{
 
 .footer{
     width :100%;
+    min-height :auto;
+    height :auto;
     padding :0px 14px;
 }
 
