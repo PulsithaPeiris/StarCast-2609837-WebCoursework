@@ -391,15 +391,18 @@ hr{
     display :flex;
     justify-self :center;
     width :calc(100% - 48px);
-    height :60px;
+    height :auto;
     margin-top :20px;
     border-radius :5px;
+    flex-wrap :wrap;
 }
 
 .filters{
     display :flex;
+    flex-direction :row;
     gap :16px;
     align-items :center;
+    flex-wrap :wrap;
 }
 
 .filters p{
@@ -609,4 +612,73 @@ form > div {
 
 #movieSuggestions p:hover{
     background-color :#888888;
+}
+
+@media(max-width : 1024px){
+    .recommendation-movies, .featured-movies, .movies-container{
+        grid-template-columns :repeat(3,1fr);
+    }
+}
+
+@media(max-width : 600px){
+    .recommendation-movies, .featured-movies, .movies-container{
+        grid-template-columns :repeat(2,1fr);
+    }
+    .movie-card{
+        max-width :280px;
+        margin :0 auto;
+    }
+    
+}
+
+@media(max-width :1000px){
+    .footer-columns{
+        flex-direction :column;
+        align-items :center;
+        text-align :center;
+        gap :20px
+    }
+    .left-side-container,
+    .right-side-container {
+        flex-direction :column;
+        align-items :center;
+    }
+}
+
+@media(max-width :900px){
+    .welcome-section{
+        aspect-ratio :unset;
+        min-height :500px;
+        padding :40px 0;
+    }
+    .welcome-left-side {
+        max-width: 100%;
+        padding: 0 24px;
+    }
+
+    .welcome-left-side h1 {
+        width: 100%;     
+        font-size: 36px;   
+        letter-spacing: 3px;
+    }
+
+    .welcome-left-side p {
+        width: 100%;       
+        font-size: 16px;  
+    }
+
+    .welcome-section-buttons {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .explore-movies-button a,
+    .write-review-button a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width :800px){
+
 }
