@@ -7,6 +7,18 @@
     </head>
     <body>
         <div class = "header">
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            </button>
+            <div class="side-panel-overlay" id="side-panel-overlay"></div>
+            <div class="side-panel" id="side-panel">
+                <button class="close-btn" id="close-btn" aria-label="Close menu">&times;</button>
+                <a href="HomePage.html" class="hover-effect">Home</a>
+                <a href="MoviesAndRatingPage.html" class="hover-effect" id = "current">Movies & Ratings</a>
+                <a href="FeedbackPage.html" class="hover-effect">Feedback Form</a>
+            </div>
             <a href = "HomePage.html"><img src = "Images/StarCast-Logo/StarCast-Logo-HW.png" alt = "StarCast-logo" width = 200 height = 70></a>
             <div class = "navbar">
                 <a href = "HomePage.html" class = "hover-effect">Home</a>
@@ -51,5 +63,6 @@
             </div>
         </div>
     <script src = "JS/ScriptMovieRatingPage.js"></script>
+    <script src = "JS/Navbar.js"></script>
     </body>
 </html>
