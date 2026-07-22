@@ -122,7 +122,6 @@ hr{
     background-position :center;
     background-repeat :no-repeat;
     aspect-ratio :16 / 7;
-    padding :0 100x;
     min-height :700px;
 }
 
@@ -469,7 +468,7 @@ hr{
     padding : 30px 70px;
     margin: 30px auto;
     border :5px;
-    border-color :#272727;
+    border-color :#888888;
     
 }
 
