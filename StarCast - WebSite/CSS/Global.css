@@ -452,7 +452,7 @@ hr{
 }
 
 .form-header p {
-    color :#777777;
+    color :#BDBDBD;
     font-family: 'Inter', 'sans-serif';
     text-align :center;
 }
@@ -591,10 +591,11 @@ form > div {
 }
 
 .error{
-    color :#E50914;
+    color :#FF6B6B;
     font-size :0.85rem;
     margin-top :5px;
     display :block;
+    font-weight :bold;
 }
 
 #movieSuggestions{
