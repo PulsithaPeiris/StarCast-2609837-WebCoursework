@@ -100,7 +100,7 @@ hr{
     color :#E50914;
 }
 
-#current{
+.current{
     border-bottom :2px solid #E50914;
     padding-bottom :3px;
 }
