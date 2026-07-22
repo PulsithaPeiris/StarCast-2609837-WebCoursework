@@ -29,7 +29,7 @@ function loadRecommendationMovies (){
                             <span class="movie-genre">${genre}</span>
                             <span class="movie-year">${year}</span>
                         </div>
-                        <h3 class="movie-title">${title}</h3>
+                        <h2 class="movie-title">${title}</h2>
                         <hr id ="divider">
                         <div class="stars-row">
                             <span class="stars">${stars}</span>
