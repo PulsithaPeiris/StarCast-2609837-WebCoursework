@@ -20,17 +20,18 @@ function movieLoader (){
             const stars = movie.querySelector("stars").textContent;
             const rating = movie.querySelector("rating").textContent;
             const image = movie.querySelector("image").textContent;
+            const alt = movie.querySelector("alt").textContent;
             movieContainer.innerHTML += `
             <div class = "movie-card" data-genre = "${genre}">
                     <div class = "image-container">
-                        <img src = "${image}" alt = "independence-day-cover">
+                        <img src = "${image}" alt = "${alt}">
                     </div>
                     <div class = "movie-meta-data">
                         <div class="meta-row">
                             <span class="movie-genre">${genre}</span>
                             <span class="movie-year">${year}</span>
                         </div>
-                        <h3 class="movie-title">${title}</h3>
+                        <h2 class="movie-title">${title}</h2>
                         <hr id ="divider">
                         <div class="stars-row">
                             <span class="stars">${stars}</span>

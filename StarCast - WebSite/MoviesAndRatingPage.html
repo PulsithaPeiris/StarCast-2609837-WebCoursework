@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
         <meta charset="UTF-8">
         <title>StarCast | Where Every Story Finds Its Audience | Movies & Rating</title>
         <link rel = "stylesheet" href = "CSS/Global.css">
     </head>
     <body>
+        <nav class = "navigation-bar">
         <div class = "header">
             <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
                     <span></span>
@@ -27,27 +28,31 @@
             </div>
             <div class = "right-side-buttons">
                 <div class = "movie-search">
+                    <label for = "movie-search" id = "movie-search-label">Movie Search</label>
                     <input type = "text" id = "movie-search" name = "homepage-search" placeholder = "Search movies...">
                     <img src = "Images/Icons/Search-Icon.png" alt = "search-icon" width = 20 height = 20>
                 </div>
             </div>
         </div>
+        </nav>
         <hr>
-        <div class = "filter-section">
-            <div class = "filters">
-                <p>Filter Genre :</p>
-                <button type = "button" class = "filter all-genre active" data-genre = "allGenre">All Genres</button>
-                <button type = "button" class = "filter" data-genre = "ACTION">Action</button>
-                <button type = "button" class = "filter" data-genre = "COMEDY">Comedy</button>
-                <button type = "button" class = "filter" data-genre = "DRAMA">Drama</button>
-                <button type = "button" class = "filter" data-genre = "SCIENCE FICTION">Science Fiction</button>
+        <main>
+            <div class = "filter-section">
+                <div class = "filters">
+                    <h1>Filter Genre :</h1>
+                    <button type = "button" class = "filter all-genre active" data-genre = "allGenre">All Genres</button>
+                    <button type = "button" class = "filter" data-genre = "ACTION">Action</button>
+                    <button type = "button" class = "filter" data-genre = "COMEDY">Comedy</button>
+                    <button type = "button" class = "filter" data-genre = "DRAMA">Drama</button>
+                    <button type = "button" class = "filter" data-genre = "SCIENCE FICTION">Science Fiction</button>
+                </div>
             </div>
-        </div>
-        <div class = "movies">
-            <div class = "movies-container" id = "movies-container">
+            <div class = "movies">
+                <div class = "movies-container" id = "movies-container">
+                </div>
             </div>
-        </div>
-        <div class = "footer">
+        </main>
+        <footer class = "footer">
             <hr class = "footer-top-divider">
             <div class = "footer-columns">
                 <div class = "left-side-container">
@@ -61,7 +66,7 @@
                     <a href = "FeedbackPage.html">Feedback Form</a>
                 </div>
             </div>
-        </div>
+        </footer>
     <script src = "JS/ScriptMovieRatingPage.js"></script>
     <script src = "JS/Navbar.js"></script>
     </body>

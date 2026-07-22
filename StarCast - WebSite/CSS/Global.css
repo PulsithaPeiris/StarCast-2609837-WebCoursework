@@ -290,15 +290,15 @@ hr{
 }
 
 .movie-genre {
-    color :#E50914;
-    font-size :11px;
+    color :#FF6B6B;
+    font-size :13px;
     font-weight :bold;
     font-family :'Arial', 'sans-serif';
     letter-spacing :0.5px;
 }
 
 .movie-year {
-    color :#888888;
+    color :#BDBDBD;
     font-size :12px;
     font-family :'Arial', 'sans-serif';
 }
@@ -328,10 +328,11 @@ hr{
 
 .stars {
     font-size :12px;
+    color :gold;
 }
 
 .user-score {
-    color :#888888;
+    color :#BDBDBD;
     font-size :12px;
     font-family :'Arial', 'sans-serif';
 }
@@ -375,13 +376,13 @@ hr{
 
 .left-side-container p, .right-side-container p{
     font-family :'Inter' , 'sans-serif';
-    color :#777777;
+    color :#BDBDBD;
     padding-top :8px;
 }
 
 .left-side-container a, .right-side-container a{
     font-family :'Inter' , 'sans-serif';
-    color :#777777;
+    color :#BDBDBD;
     padding-top :8px;
     text-decoration :none;
     cursor :pointer;
@@ -405,7 +406,7 @@ hr{
     flex-wrap :wrap;
 }
 
-.filters p{
+.filters h1{
     font-family :'Inter' , 'sans-serif';
     color :white;
     padding-left :20px;
@@ -782,4 +783,8 @@ form > div {
     font-size: 28px;
     align-self: flex-end;
     cursor: pointer;
+}
+
+label[for = "movie-search"]{
+    visibility :hidden;
 }

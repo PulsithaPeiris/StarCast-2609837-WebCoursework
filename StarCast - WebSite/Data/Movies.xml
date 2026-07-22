@@ -7,6 +7,7 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>4.0 / 5</rating>
         <image>Images/Movie-Covers/Michael-Cover.jpg</image>
+        <alt>Michael-Cover-Photo</alt>
     </movie>
 
     <movie>
@@ -16,6 +17,7 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>4.0 / 5</rating>
         <image>Images/Movie-Covers/Independence-Day-Cover.jpg</image>
+        <alt>Independence-Day-Cover-Photo</alt>
     </movie>
 
     <movie>
@@ -25,6 +27,7 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>5.0 / 5</rating>
         <image>Images/Movie-Covers/Der-Astronaut-Project-Hail-Mary.jpeg</image>
+        <alt>Der-Astronaut-Project-Hail-Mary-Cover-Photo</alt>
     </movie>
 
     <movie>
@@ -34,6 +37,7 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>3.0 / 5</rating>
         <image>Images/Movie-Covers/Uncle-Frank-Cover.jpeg</image>
+        <alt>Uncle-Frank-Cover-Photo</alt>
     </movie>
 
     <movie>
@@ -43,6 +47,7 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>5.0 / 5</rating>
         <image>Images/Movie-Covers/F1-The-Movie-Cover.jpeg</image>
+        <alt>F1-Cover-Photo</alt>
     </movie>
 
     <movie>
@@ -52,6 +57,7 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>5.0 / 5</rating>
         <image>Images/Movie-Covers/Interstellar-Cover.jpg</image>
+        <alt>Interstellar-Cover-Photo</alt>
     </movie>
 
     <movie>
@@ -61,6 +67,7 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>4.0 / 5</rating>
         <image>Images/Movie-Covers/JJK-Season-3-Cover.jpg</image>
+        <alt>JUJUTSU-KAISEN-Season-3-Cover-Photo</alt>
     </movie>
 
     <movie>
@@ -70,6 +77,7 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>3.0 / 5</rating>
         <image>Images/Movie-Covers/Bad-Boys-For-Life-Cover.jpg</image>
+        <alt>Bad-Boys-For-Life-Cover-Photo</alt>
     </movie>
 
     <movie>
@@ -79,15 +87,17 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>5.0 / 5</rating>
         <image>Images/Movie-Covers/Revenge-of-The-Sith-Cover.jpg</image>
+        <alt>Star-Wars:Episode-III–Revenge-of-the-Sith-Cover-Photo</alt>
     </movie>
 
     <movie>
         <title>Peaky Blinders</title>
         <genre>DRAMA</genre>
-        <year>2013-2022</year>
+        <year>2013</year>
         <stars>&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>5.0 / 5</rating>
         <image>Images/Movie-Covers/Peaky-Blinders-Cover.jpeg</image>
+        <alt>Peaky-Blinders-Cover-Photo</alt>
     </movie>
 
     <movie>
@@ -97,6 +107,7 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>4.0 / 5</rating>
         <image>Images/Movie-Covers/Spider-Man-No-Way-Home-Cover.jpg</image>
+        <alt>Spider-Man:No-Way-Home-Cover-Photo</alt>
     </movie>
 
     <movie>
@@ -106,6 +117,7 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>5.0 / 5</rating>
         <image>Images/Movie-Covers/The-Matrix-Cover.jpeg</image>
+        <alt>The-Matrix-Cover-Photo</alt>
     </movie>
 
     <movie>
@@ -115,6 +127,7 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>3.0 / 5</rating>
         <image>Images/Movie-Covers/Gravity-Cover.jpg</image>
+        <alt>Gravity-Cover-Photo</alt>
     </movie>
 
     <movie>
@@ -124,6 +137,7 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>4.0 / 5</rating>
         <image>Images/Movie-Covers/District-9-Cover.jpg</image>
+        <alt>District-9-Cover-Photo</alt>
     </movie>
 
     <movie>
@@ -133,6 +147,7 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>5.0 / 5</rating>
         <image>Images/Movie-Covers/The-Godfather-Cover.jpg</image>
+        <alt>The-Godfather-Cover-Photo</alt>
     </movie>
 
     <movie>
@@ -142,6 +157,7 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>3.0 / 5</rating>
         <image>Images/Movie-Covers/Due-Date-Cover.jpeg</image>
+        <alt>Due-Date-Cover-Photo</alt>
     </movie>
 
     <movie>
@@ -151,6 +167,7 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>5.0 / 5</rating>
         <image>Images/Movie-Covers/3-Idiots-Cover.jpg</image>
+        <alt>3-Idiots-Cover-Photo</alt>
     </movie>
 
     <movie>
@@ -160,6 +177,7 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>5.0 / 5</rating>
         <image>Images/Movie-Covers/Batman-Begins-Cover.jpg</image>
+        <alt>Batman-Begins-Cover-Photo</alt>
     </movie>
 
     <movie>
@@ -169,6 +187,7 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>4.0 / 5</rating>
         <image>Images/Movie-Covers/There-Will-Be-Blood-Cover.jpg</image>
+        <alt>There-Will-Be-Blood-Cover-Photo</alt>
     </movie>
 
     <movie>
@@ -178,5 +197,6 @@
         <stars>&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</stars>
         <rating>5.0 / 5</rating>
         <image>Images/Movie-Covers/Home-Alone-Cover.jpg</image>
+        <alt>Home-Alone-Cover-Photo</alt>
     </movie>
 </movies>

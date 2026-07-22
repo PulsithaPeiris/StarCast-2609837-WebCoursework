@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang = "en">
     <head>
         <meta charset="UTF-8">
         <title>StarCast | Where Every Story Finds Its Audience | Home</title>
@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     </head>
     <body>
+        <nav class = "navigation-bar">
         <div class = "header">
             <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
                     <span></span>
@@ -30,46 +31,50 @@
             </div>
             <div class = "right-side-buttons">
                 <div class = "movie-search">
+                    <label for = "movie-search" id = "movie-search-label">Movie Search</label>
                     <input type = "text" id = "movie-search" name = "homepage-search" placeholder = "Search movies...">
                     <img src = "Images/Icons/Search-Icon.png" alt = "search-icon" width = 20 height = 20>
                 </div>
             </div>
         </div>
+        </nav>
         <hr>
-        <div class = "welcome-section">
-            <div class = "welcome-left-side">
-                    <h1>Where Every Story <br>Finds Its Audience</h1>
-                    <p>StarCast helps you discover, filter, and review movies across every <br>genre — from action-packed blockbusters to award-winning dramas.</p>
-                    <div class = "welcome-section-buttons">
-                        <div class = "explore-movies-button">
-                            <a href = "MoviesAndRatingPage.html">Explore Movies<span aria-hidden="true"> &#8594;</span></a>
+        <main>
+            <div class = "welcome-section">
+                <div class = "welcome-left-side">
+                        <h1>Where Every Story <br>Finds Its Audience</h1>
+                        <p>StarCast helps you discover, filter, and review movies across every <br>genre — from action-packed blockbusters to award-winning dramas.</p>
+                        <div class = "welcome-section-buttons">
+                            <div class = "explore-movies-button">
+                                <a href = "MoviesAndRatingPage.html">Explore Movies<span aria-hidden="true"> &#8594;</span></a>
+                            </div>
+                            <div class = "write-review-button">
+                                <a href = "FeedbackPage.html">Write a Review</a>
+                            </div>
                         </div>
-                        <div class = "write-review-button">
-                            <a href = "FeedbackPage.html">Write a Review</a>
-                        </div>
-                    </div>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class = "movie-recommendation">
-            <div class = "recommendation-header">
-                <img src = "Images/Icons/Movie-Icon.png" alt = "movie-recommendation-icon" width = 20 height = 20>
-                <h1>Movie Recommendations</h1>
+            <hr>
+            <div class = "movie-recommendation">
+                <div class = "recommendation-header">
+                    <img src = "Images/Icons/Movie-Icon.png" alt = "movie-recommendation-icon" width = 20 height = 20>
+                    <h1>Movie Recommendations</h1>
+                </div>
+                <div class = "recommendation-movies" id = "recommendation-movies">
+                    
+                </div>
             </div>
-            <div class = "recommendation-movies" id = "recommendation-movies">
-                
+            <div class = "featured-movie">
+                <div class = "featured-movies-header">
+                    <img src = "Images/Icons/Fire-Icon.png" alt = "movie-recommendation-icon" width = 20 height = 20>
+                    <h1>Featured Movies</h1>
+                </div>
+                <div class = "featured-movies" id = "featured-movies">
+                    
+                </div>
             </div>
-        </div>
-        <div class = "featured-movie">
-            <div class = "featured-movies-header">
-                <img src = "Images/Icons/Fire-Icon.png" alt = "movie-recommendation-icon" width = 20 height = 20>
-                <h1>Featured Movies</h1>
-            </div>
-            <div class = "featured-movies" id = "featured-movies">
-                
-            </div>
-        </div>
-        <div class = "footer">
+        </main>
+        <footer class = "footer">
             <hr class = "footer-top-divider">
             <div class = "footer-columns">
                 <div class = "left-side-container">
@@ -83,7 +88,7 @@
                     <a href = "FeedbackPage.html">Feedback Form</a>
                 </div>
             </div>
-        </div>
+        </footer>
         <script src = "JS/HomePage.js"></script>
         <script src = "JS/Search.js"></script>
         <script src = "JS/Navbar.js"></script>

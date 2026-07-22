@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
         <meta charset="UTF-8">
         <title>StarCast | Where Every Story Finds Its Audience | Feeback Form</title>
         <link rel = "stylesheet" href = "CSS/Global.css">
     </head>
     <body>
+        <nav class = "navigation-bar">
         <div class = "header">
             <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
                     <span></span>
@@ -27,92 +28,96 @@
             </div>
             <div class = "right-side-buttons">
                 <div class = "movie-search">
+                    <label for = "movie-search" id = "movie-search-label">Movie Search</label>                    
                     <input type = "text" id = "movie-search" name = "homepage-search" placeholder = "Search movies...">
                     <img src = "Images/Icons/Search-Icon.png" alt = "search-icon" width = 20 height = 20>
                 </div>
             </div>
         </div>
+        </nav>
         <hr>
-        <div class = "feedback-form">
-            <div class = "form-header">
-                <h1>FeedBack and Reviews</h1>
-                <p>Help us and the community by sharing your latest cinematic experiences.</p>
+        <main>
+            <div class = "feedback-form">
+                <div class = "form-header">
+                    <h1>FeedBack and Reviews</h1>
+                    <p>Help us and the community by sharing your latest cinematic experiences.</p>
+                </div>
+                <div class = "form-body">
+                    <form id = "feedback-form">
+                        <div class = "form-fName">
+                            <label for = "fName">First name</label>
+                            <input type = "text" id = "fName" name = "fName" placeholder = "Your first name">
+                            <small class = "error" id = "fNameError"></small>
+                        </div>
+                        <div class = "form-lName">
+                            <label for = "lName">Last name</label>
+                            <input type = "text" id = "lName" name = "lName" placeholder = "Your last name">
+                            <small class = "error" id = "lNameError"></small>
+                        </div>
+                        <div class = "form-email">
+                            <label for = "email">Email</label>
+                            <input type = "text" id = "email" name = "email" placeholder = "eg : yourname@email.com">
+                            <small class = "error" id = "emailError"></small>
+                        </div>
+                        <div class = "form-movieTitle">
+                            <label for = "movieTitle">Movie title</label>
+                            <input type = "text" id = "movieTitle" name = "movieTitle" placeholder = "Enter movie title">
+                            <div id = "movieSuggestions"></div>
+                            <small class = "error" id = "titleError"></small>
+                        </div>
+                        <div class = "form-movieGenre">
+                            <label for = "movieGenre">Choose movie genre</label>
+                            <select name = "movieGenre" id = "movieGenre">
+                                <option value = "" disabled selected>-- Select an option --</option>
+                                <option value = "COMEDY">Comedy</option>
+                                <option value = "ACTION">Action</option>
+                                <option value = "DRAMA">Drama</option>
+                                <option value = "SCIENCE FICTION">Science Fiction</option>
+                            </select>
+                            <small class = "error" id = "genreError"></small>
+                        </div>
+                        <div class = "form-rating">
+                            <fieldset>
+                                <legend>Overall rating</legend>
+                                <input type = "radio" id = "oneStar" name = "rating" value = "oneStar">
+                                <label for = "oneStar">1 Star</label>
+                                <input type = "radio" id = "twoStar" name = "rating" value = "twoStar">
+                                <label for = "twoStar">2 Star</label>
+                                <input type = "radio" id = "threeStar" name = "rating" value = "threeStar">
+                                <label for = "threeStar">3 Star</label>
+                                <input type = "radio" id = "fourStar" name = "rating" value = "fourStar">
+                                <label for = "fourStar">4 Star</label>
+                                <input type = "radio" id = "fiveStar" name = "rating" value = "fiveStar">
+                                <label for = "fiveStar">5 Star</label>
+                            </fieldset> 
+                            <small class = "error" id = "ratingError"></small>
+                        </div>
+                        <div class = "form-recommendation">
+                            <fieldset>
+                                <legend>Will you recommend this movie to another person</legend>
+                                <input type = "radio" id = "recommendationYes" name = "recommendation" value = "yes">
+                                <label for = "recommendationYes">Yes</label>
+                                <input type = "radio" id = "recommendationNo" name = "recommendation" value = "no">
+                                <label for = "recommendationNo">No</label>
+                            </fieldset>
+                            <small class = "error" id = "recommendError"></small>
+                        </div>
+                        <div class = "form-review">
+                            <label for = "writtenReview">Write a review</label>
+                            <textarea id = "writtenReview" name="feedback" rows="4" cols="100" placeholder = "Share details about the plot, acting, final twist and overall opinion about the movie"></textarea>
+                            <small class = "error" id = "msgError"></small>
+                        </div> 
+                        <div class = "submit">
+                            <button type = "submit" id = "submit">
+                                <span>Submit Review</span>
+                                <img src = "Images/Icons/Send-Icon.png" alt = "send-review-icon" width = 30 height = 30>
+                            </button> 
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class = "form-body">
-                <form id = "feedback-form">
-                    <div class = "form-fName">
-                        <label for = "fName">First name</label>
-                        <input type = "text" id = "fName" name = "fName" placeholder = "Your first name">
-                        <small class = "error" id = "fNameError"></small>
-                    </div>
-                    <div class = "form-lName">
-                        <label for = "lName">Last name</label>
-                        <input type = "text" id = "lName" name = "lName" placeholder = "Your last name">
-                        <small class = "error" id = "lNameError"></small>
-                    </div>
-                    <div class = "form-email">
-                        <label for = "email">Email</label>
-                        <input type = "text" id = "email" name = "email" placeholder = "eg : yourname@email.com">
-                        <small class = "error" id = "emailError"></small>
-                    </div>
-                    <div class = "form-movieTitle">
-                        <label for = "movieTitle">Movie title</label>
-                        <input type = "text" id = "movieTitle" name = "movieTitle" placeholder = "Enter movie title">
-                        <div id = "movieSuggestions"></div>
-                        <small class = "error" id = "titleError"></small>
-                    </div>
-                    <div class = "form-movieGenre">
-                        <label for = "movieGenre">Choose movie genre</label>
-                        <select name = "movieGenre" id = "movieGenre">
-                            <option value = "" disabled selected>-- Select an option --</option>
-                            <option value = "COMEDY">Comedy</option>
-                            <option value = "ACTION">Action</option>
-                            <option value = "DRAMA">Drama</option>
-                            <option value = "SCIENCE FICTION">Science Fiction</option>
-                        </select>
-                        <small class = "error" id = "genreError"></small>
-                    </div>
-                    <div class = "form-rating">
-                        <fieldset>
-                            <legend>Overall rating</legend>
-                            <input type = "radio" id = "oneStar" name = "rating" value = "oneStar">
-                            <label for = "oneStar">1 Star</label>
-                            <input type = "radio" id = "twoStar" name = "rating" value = "twoStar">
-                            <label for = "twoStar">2 Star</label>
-                            <input type = "radio" id = "threeStar" name = "rating" value = "threeStar">
-                            <label for = "threeStar">3 Star</label>
-                            <input type = "radio" id = "fourStar" name = "rating" value = "fourStar">
-                            <label for = "fourStar">4 Star</label>
-                            <input type = "radio" id = "fiveStar" name = "rating" value = "fiveStar">
-                            <label for = "fiveStar">5 Star</label>
-                        </fieldset> 
-                        <small class = "error" id = "ratingError"></small>
-                    </div>
-                    <div class = "form-recommendation">
-                        <fieldset>
-                            <legend>Will you recommend this movie to another person</legend>
-                            <input type = "radio" id = "recommendationYes" name = "recommendation" value = "yes">
-                            <label for = "recommendationYes">Yes</label>
-                            <input type = "radio" id = "recommendationNo" name = "recommendation" value = "no">
-                            <label for = "recommendationNo">No</label>
-                        </fieldset>
-                        <small class = "error" id = "recommendError"></small>
-                    </div>
-                    <div class = "form-review">
-                        <label for = "writtenReview">Write a review</label>
-                        <textarea id = "writtenReview" name="feedback" rows="4" cols="100" placeholder = "Share details about the plot, acting, final twist and overall opinion about the movie"></textarea>
-                        <small class = "error" id = "msgError"></small>
-                    </div> 
-                    <div class = "submit">
-                        <button type = "submit" id = "submit">
-                            <span>Submit Review</span>
-                            <img src = "Images/Icons/Send-Icon.png" alt = "send-review-icon" width = 30 height = 30>
-                        </button> 
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class = "footer">
+        </main>
+        <footer class = "footer">
             <hr class = "footer-top-divider">
             <div class = "footer-columns">
                 <div class = "left-side-container">
@@ -126,7 +131,7 @@
                     <a href = "FeedbackPage.html">Feedback Form</a>
                 </div>
             </div>
-        </div>
+        </footer>
         <script src = "JS/FeedbackPage.js"></script>
         <script src = "JS/Search.js"></script>
         <script src = "JS/Navbar.js"></script>
