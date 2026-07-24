@@ -15,6 +15,23 @@
     --star-gold: gold;
 }
 
+:root {
+    --font-heading: 'Bebas Neue', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-meta: 'Arial', sans-serif;
+
+    --fs-hero: 60px;
+    --fs-section-heading: 40px;
+    --fs-body-lg: 25px;
+    --fs-button: 20px;
+    --fs-card-title: 18px;
+    --fs-form-label: 17px;
+    --fs-genre-tag: 13px;
+    --fs-nav: 13px;
+    --fs-meta: 12px;
+    --fs-error: 0.85rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -35,7 +52,7 @@ body{
 }
 
 .bebas-neue-regular {
-  font-family: 'Bebas Neue', 'sans-serif';
+  font-family: var(--font-heading);
   font-weight: 400;
   font-style: normal;
 }
@@ -64,13 +81,13 @@ hr{
 
 .right-side-buttons button{
     background :none;
-    font-family :'Inter' , 'sans-serif';
+    font-family :var(--font-body);
     font-weight :bold;
     padding :10px 16px;
     color :var(--text-white);
     cursor :pointer;
     height :40px;
-    font-size :13px;
+    font-size :var(--fs-nav);
 }
 
 #sign-in-button{
@@ -107,7 +124,7 @@ hr{
 .hover-effect{
     text-decoration :none;
     color :var(--text-white);
-    font-family :'Inter', sans-serif;
+    font-family :var(--font-body);
     font-size :medium;
     font-weight :bold;
     transition :color 0.3s ease; 
@@ -152,19 +169,19 @@ hr{
 }
 
 .welcome-left-side h1{
-    font-family :'Bebas Neue' , 'sans-serif';
+    font-family :var(--font-heading);
     letter-spacing :7px;
     color :var(--text-white);
     font-weight :bold;
-    font-size :60px;
+    font-size :var(--fs-hero);
     width :1000px;
 }
 
 .welcome-left-side p{
-    font-family :'Inter' , 'sans-serif';
+    font-family :var(--font-body);
     color :var(--text-white);
     font-weight :normal;
-    font-size :25px;
+    font-size :var(--fs-body-lg);
     padding-top :15px;
     padding-bottom :25px;
     line-height :1.7;
@@ -181,8 +198,8 @@ hr{
     display :inline-block;
     text-decoration :none;
     color :var(--text-white);
-    font-family :'Inter' , 'sans-serif';
-    font-size :20px;
+    font-family :var(--font-body);
+    font-size :var(--fs-button);
     cursor :pointer;
     font-weight :bold;
     padding :15px 30px;
@@ -227,8 +244,8 @@ hr{
 
 .recommendation-header h1, .featured-movies-header h1{
     color :var(--text-white);
-    font-family :'Bebas Neue' , 'sans-serif';
-    font-size :40px;
+    font-family :var(--font-heading);
+    font-size :var(--fs-section-heading);
     margin :0;
     letter-spacing :2px;
 }
@@ -307,23 +324,23 @@ hr{
 
 .movie-genre {
     color :var(--accent-red-light);
-    font-size :13px;
+    font-size :var(--fs-genre-tag);
     font-weight :bold;
-    font-family :'Arial', 'sans-serif';
+    font-family :var(--font-meta);
     letter-spacing :0.5px;
 }
 
 .movie-year {
     color :var(--text-secondary);
-    font-size :12px;
-    font-family :'Arial', 'sans-serif';
+    font-size :var(--fs-meta);
+    font-family :var(--font-meta);
 }
 
 .movie-title {
     color :var(--text-white);
-    font-size :18px;
+    font-size :var(--fs-card-title);
     margin :0;
-    font-family :'Arial', 'sans-serif';
+    font-family :var(--font-meta);
     font-weight :600;
     margin-bottom :auto;
 }
@@ -343,14 +360,14 @@ hr{
 }
 
 .stars {
-    font-size :12px;
+    font-size :var(--fs-meta);
     color :var(--star-gold);
 }
 
 .user-score {
     color :var(--text-secondary);
-    font-size :12px;
-    font-family :'Arial', 'sans-serif';
+    font-size :var(--fs-meta);
+    font-family :var(--font-meta);
 }
 
 .footer{
@@ -391,13 +408,13 @@ hr{
 }
 
 .left-side-container p, .right-side-container p{
-    font-family :'Inter' , 'sans-serif';
+    font-family :var(--font-body);
     color :var(--text-secondary);
     padding-top :8px;
 }
 
 .left-side-container a, .right-side-container a{
-    font-family :'Inter' , 'sans-serif';
+    font-family :var(--font-body);
     color :var(--text-secondary);
     padding-top :8px;
     text-decoration :none;
@@ -423,7 +440,7 @@ hr{
 }
 
 .filters h1{
-    font-family :'Inter' , 'sans-serif';
+    font-family :var(--font-body);
     color :var(--text-white);
     padding-left :20px;
     font-size :large;
@@ -435,7 +452,7 @@ hr{
     background-color :var(--bg-input);
     border :none;
     padding :10px 16px;
-    font-family :'Inter' , 'sans-serif';
+    font-family :var(--font-body);
     color :var(--text-white);
     font-weight :bold;
     font-size :medium;
@@ -463,14 +480,14 @@ hr{
 
 .form-header h1 {
     color :var(--text-white);
-    font-family: 'Bebas Neue', 'sans-serif';
+    font-family: var(--font-heading);
     text-align :center;
     letter-spacing :3px;
 }
 
 .form-header p {
     color :var(--text-secondary);
-    font-family: 'Inter', 'sans-serif';
+    font-family:var(--font-body);
     text-align :center;
 }
 
@@ -498,15 +515,15 @@ hr{
     background-color :var(--bg-input);
     color :var(--text-white);
     outline :none;
-    font-family :'Inter' , 'sans-serif';
+    font-family :var(--font-body);
     font-size :medium;
 }
 
 .form-body label, .form-rating legend, .form-recommendation legend{
     color :var(--text-white);
-    font-family :'Arial' , 'sans-serif';
+    font-family :var(--font-meta);
     font-weight :bold;
-    font-size :17px;
+    font-size :var(--fs-form-label);
     margin-bottom :5px;
 }
 
@@ -556,7 +573,7 @@ form > div {
     background-color :var(--bg-input);
     color :var(--text-white);
     outline :none;
-    font-family :'Inter' , 'sans-serif';
+    font-family :var(--font-body);
     font-size :medium;
 }
 
@@ -575,7 +592,7 @@ form > div {
     background-color :var(--bg-input);
     color :var(--text-white);
     outline :none;
-    font-family :'Inter' , 'sans-serif';
+    font-family :var(--font-body);
     font-size :medium;  
 }
 
@@ -589,8 +606,8 @@ form > div {
     border :none;
     cursor :pointer;
     background-color :var(--accent-red);
-    font-family: 'Bebas Neue', 'sans-serif';
-    font-size :20px;
+    font-family: var(--font-heading);
+    font-size :var(--fs-button);
     font-weight :bold;
     color :var(--text-white);
     display: flex;
@@ -608,8 +625,8 @@ form > div {
 }
 
 .error{
-    color :--accent-red-light;
-    font-size :0.85rem;
+    color :var(--accent-red-light);
+    font-size :var(--fs-error);
     margin-top :5px;
     display :block;
     font-weight :bold;
@@ -698,7 +715,7 @@ form > div {
     }
 
     .form-header h1 {
-        font-size :25px;
+        font-size :var(--fs-body-lg);
     }
 
     .form-header p{
