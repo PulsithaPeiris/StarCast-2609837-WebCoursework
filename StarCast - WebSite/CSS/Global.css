@@ -1,3 +1,20 @@
+:root {
+    --bg-primary: #0D0D0D;     
+    --bg-surface: #272727;     
+    --bg-input: #303030;       
+    
+    --text-white: #ffffff;
+    --text-secondary: #BDBDBD;  
+    
+    --accent-red: #E50914;      
+    --accent-red-hover: #ab0000; 
+    --accent-red-light: #FF6B6B; 
+    --accent-white-hover: #ffffff;
+    
+    --border-muted: #888888;    
+    --star-gold: gold;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +22,7 @@
 }
 
 body{
-    background-color :#0D0D0D;
+    background-color :var(--bg-primary);
 }
 
 .header{
@@ -32,7 +49,7 @@ body{
 hr{
     border :none;
     height :1.5px;  
-    background-color :#272727;
+    background-color :var(--bg-surface);
     margin-bottom :-10px;
     margin-top :-10px;
     width :100%;
@@ -50,7 +67,7 @@ hr{
     font-family :'Inter' , 'sans-serif';
     font-weight :bold;
     padding :10px 16px;
-    color :white;
+    color :var(--text-white);
     cursor :pointer;
     height :40px;
     font-size :13px;
@@ -58,7 +75,7 @@ hr{
 
 #sign-in-button{
     border-radius :5px;
-    background-color :#E50914;
+    background-color :var(--accent-red);
     border :none;
 }
 
@@ -81,15 +98,15 @@ hr{
     border-radius :5px;
     width :200px;
     height :40px;
-    background-color :#272727;
+    background-color :var(--bg-surface);
     border :none;
     outline :none;
-    color :white;
+    color :var(--text-white);
 }
 
 .hover-effect{
     text-decoration :none;
-    color :white;
+    color :var(--text-white);
     font-family :'Inter', sans-serif;
     font-size :medium;
     font-weight :bold;
@@ -97,11 +114,11 @@ hr{
 }
 
 .hover-effect:hover{
-    color :#E50914;
+    color :var(--accent-red);
 }
 
 .current{
-    border-bottom :2px solid #E50914;
+    border-bottom :2px solid var(--accent-red);
     padding-bottom :3px;
 }
 
@@ -137,7 +154,7 @@ hr{
 .welcome-left-side h1{
     font-family :'Bebas Neue' , 'sans-serif';
     letter-spacing :7px;
-    color :white;
+    color :var(--text-white);
     font-weight :bold;
     font-size :60px;
     width :1000px;
@@ -145,7 +162,7 @@ hr{
 
 .welcome-left-side p{
     font-family :'Inter' , 'sans-serif';
-    color :white;
+    color :var(--text-white);
     font-weight :normal;
     font-size :25px;
     padding-top :15px;
@@ -163,7 +180,7 @@ hr{
 .explore-movies-button a, .write-review-button a{
     display :inline-block;
     text-decoration :none;
-    color :white;
+    color :var(--text-white);
     font-family :'Inter' , 'sans-serif';
     font-size :20px;
     cursor :pointer;
@@ -175,23 +192,23 @@ hr{
 }
 
 .explore-movies-button a{
-    background-color :#E50914;
-    color :white;
+    background-color :var(--accent-red);
+    color :var(--text-white);
     border :none;
 }
 
 .write-review-button a{
-    background-color :#272727;
+    background-color :var(--bg-surface);
     border :none;
 }
 
 .explore-movies-button a:hover{
-    background-color :#ab0000;
+    background-color :var(--accent-red-hover);
 }
 
 .write-review-button a:hover{
-    background-color :white;
-    color :#0D0D0D;
+    background-color :var(--accent-white-hover);
+    color :var(--bg-primary);
 }
 
 .movie-recommendation, .featured-movie ,.movies{
@@ -209,7 +226,7 @@ hr{
 }
 
 .recommendation-header h1, .featured-movies-header h1{
-    color :white;
+    color :var(--text-white);
     font-family :'Bebas Neue' , 'sans-serif';
     font-size :40px;
     margin :0;
@@ -232,8 +249,8 @@ hr{
 }
 
 .movie-card{
-    background-color :#272727;
-    border :1px solid #272727;
+    background-color :var(--bg-surface);
+    border :1px solid var(--bg-surface);
     border-radius :5px;
     padding :12px;
     box-sizing :border-box;
@@ -255,7 +272,7 @@ hr{
 
 .movie-card:hover ,.movie-card.hidden:hover{
     transform :scale(1.02);
-    border-color :#E50914;
+    border-color :var(--accent-red);
     box-shadow :0 4px 15px rgba(255, 51, 51, 0.15);
 }
 
@@ -263,7 +280,7 @@ hr{
     width :100%;
     aspect-ratio :2 / 3; 
     position :relative; 
-    background-color :#272727;
+    background-color :var(--bg-surface);
     border-radius :5px;
     overflow :hidden;
 }
@@ -289,7 +306,7 @@ hr{
 }
 
 .movie-genre {
-    color :#FF6B6B;
+    color :var(--accent-red-light);
     font-size :13px;
     font-weight :bold;
     font-family :'Arial', 'sans-serif';
@@ -297,13 +314,13 @@ hr{
 }
 
 .movie-year {
-    color :#BDBDBD;
+    color :var(--text-secondary);
     font-size :12px;
     font-family :'Arial', 'sans-serif';
 }
 
 .movie-title {
-    color :white;
+    color :var(--text-white);
     font-size :18px;
     margin :0;
     font-family :'Arial', 'sans-serif';
@@ -327,11 +344,11 @@ hr{
 
 .stars {
     font-size :12px;
-    color :gold;
+    color :var(--star-gold);
 }
 
 .user-score {
-    color :#BDBDBD;
+    color :var(--text-secondary);
     font-size :12px;
     font-family :'Arial', 'sans-serif';
 }
@@ -356,7 +373,7 @@ hr{
     margin-top :50px;
     border :none;
     height :1.5px;
-    background-color :#272727;
+    background-color :var(--bg-surface);
     width :100%;
 }
 
@@ -375,13 +392,13 @@ hr{
 
 .left-side-container p, .right-side-container p{
     font-family :'Inter' , 'sans-serif';
-    color :#BDBDBD;
+    color :var(--text-secondary);
     padding-top :8px;
 }
 
 .left-side-container a, .right-side-container a{
     font-family :'Inter' , 'sans-serif';
-    color :#BDBDBD;
+    color :var(--text-secondary);
     padding-top :8px;
     text-decoration :none;
     cursor :pointer;
@@ -407,7 +424,7 @@ hr{
 
 .filters h1{
     font-family :'Inter' , 'sans-serif';
-    color :white;
+    color :var(--text-white);
     padding-left :20px;
     font-size :large;
     font-weight :bold;
@@ -415,11 +432,11 @@ hr{
 
 .filter{
     border-radius :5px;
-    background-color :#303030;
+    background-color :var(--bg-input);
     border :none;
     padding :10px 16px;
     font-family :'Inter' , 'sans-serif';
-    color :white;
+    color :var(--text-white);
     font-weight :bold;
     font-size :medium;
     height :40px;
@@ -428,11 +445,11 @@ hr{
 }
 
 .filter.active {
-    background-color :#E50914;
+    background-color :var(--accent-red);
 }
 
 .filter:hover{
-    background-color :#ab0000;
+    background-color :var(--accent-red-hover);
 }
 
 .feedback-form{
@@ -445,14 +462,14 @@ hr{
 }
 
 .form-header h1 {
-    color :white;
+    color :var(--text-white);
     font-family: 'Bebas Neue', 'sans-serif';
     text-align :center;
     letter-spacing :3px;
 }
 
 .form-header p {
-    color :#BDBDBD;
+    color :var(--text-secondary);
     font-family: 'Inter', 'sans-serif';
     text-align :center;
 }
@@ -462,13 +479,13 @@ hr{
     max-width :1000px;
     min-height :1000px;
     height :auto;
-    background-color :#272727;
+    background-color :var(--bg-surface);
     display :flex;
     border-radius :5px;
     padding : 30px 70px;
     margin: 30px auto;
     border :5px;
-    border-color :#888888;
+    border-color :var(--border-muted);
     
 }
 
@@ -478,15 +495,15 @@ hr{
     padding :10px 10px;
     width :100%;
     height :50px;
-    background-color :#303030;
-    color :white;
+    background-color :var(--bg-input);
+    color :var(--text-white);
     outline :none;
     font-family :'Inter' , 'sans-serif';
     font-size :medium;
 }
 
 .form-body label, .form-rating legend, .form-recommendation legend{
-    color :aliceblue;
+    color :var(--text-white);
     font-family :'Arial' , 'sans-serif';
     font-weight :bold;
     font-size :17px;
@@ -504,17 +521,17 @@ form > div {
     -webkit-appearance :none;
     width :16px;
     height :16px;
-    border :2px solid #888888;
+    border :2px solid var(--border-muted);
     border-radius :3px;
-    background-color :#303030;
+    background-color :var(--bg-input);
     cursor :pointer;
     position:relative;
     padding :0px 0px 0px 10px;
 }
 
 .form-recommendation input[type="radio"]:checked {
-    background-color :#E50914;
-    border-color :#888888;
+    background-color :var(--accent-red);
+    border-color :var(--border-muted);
 }
 
 .form-rating fieldset, .form-recommendation fieldset{
@@ -536,8 +553,8 @@ form > div {
     padding :10px 5px;
     width :100%;
     height :200px;
-    background-color :#303030;
-    color :white;
+    background-color :var(--bg-input);
+    color :var(--text-white);
     outline :none;
     font-family :'Inter' , 'sans-serif';
     font-size :medium;
@@ -546,7 +563,7 @@ form > div {
 .form-rating input[type="radio"]{
     width :16px;
     height :16px;
-    accent-color :#E50914;
+    accent-color :var(--accent-red);
 }
 
 .form-movieGenre select{
@@ -555,8 +572,8 @@ form > div {
     padding :10px 5px;
     width :100%;
     height :50px;
-    background-color :#303030;
-    color :white;
+    background-color :var(--bg-input);
+    color :var(--text-white);
     outline :none;
     font-family :'Inter' , 'sans-serif';
     font-size :medium;  
@@ -571,11 +588,11 @@ form > div {
 .submit button{
     border :none;
     cursor :pointer;
-    background-color :#E50914;
+    background-color :var(--accent-red);
     font-family: 'Bebas Neue', 'sans-serif';
     font-size :20px;
     font-weight :bold;
-    color :white;
+    color :var(--text-white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -591,7 +608,7 @@ form > div {
 }
 
 .error{
-    color :#FF6B6B;
+    color :--accent-red-light;
     font-size :0.85rem;
     margin-top :5px;
     display :block;
@@ -599,10 +616,10 @@ form > div {
 }
 
 #movieSuggestions{
-    background-color :#303030;
+    background-color :var(--bg-input);
     border:1px solid white;
     width:100%;
-    color :white;
+    color :var(--text-white);
 }
 
 #movieSuggestions p{
@@ -613,7 +630,7 @@ form > div {
 }
 
 #movieSuggestions p:hover{
-    background-color :#888888;
+    background-color :var(--border-muted);
 }
 
 @media(max-width : 1024px){
@@ -724,10 +741,10 @@ form > div {
         left: 0;
         width: 100%;
         flex-direction: column;
-        background-color: #0D0D0D;
+        background-color:var(--bg-primary);
         padding: 20px;
         gap: 20px;
-        border-top: 1px solid #272727;
+        border-top: 1px solid var(--bg-surface);
     }
 
     .navbar.open {
@@ -745,7 +762,7 @@ form > div {
     left: 0;
     width: 260px;
     height: 100%;
-    background-color: #0D0D0D;
+    background-color: var(--bg-primary);
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -780,7 +797,7 @@ form > div {
 .close-btn {
     background: none;
     border: none;
-    color: white;
+    color: var(--text-white);
     font-size: 28px;
     align-self: flex-end;
     cursor: pointer;
