@@ -1,7 +1,10 @@
+//Selecting the relevant elements
 const movieInput = document.querySelector("#movieTitle");
 const movieSuggestion = document.querySelector("#movieSuggestions");
+//Declare block scope list
 let movieTitle = [];
 
+//This function will read the XML file and add all the movie titles to the movieTitle list
 function loadMovieTitle (){
     fetch("Data/Movies.xml")
     .then(input => {
@@ -20,13 +23,17 @@ function loadMovieTitle (){
     });
 }
 
+//Calling the function
 loadMovieTitle();
 
+//Detecting if a title is entered if yes filter the saved titles on the condition where the inputed 
+// value is included in the current movie title
 movieInput.addEventListener("input", () => {
     const value = movieInput.value.toLowerCase();
     movieSuggestion.innerHTML = "";
     if (value == "") {return;}
     const filteredMovies = movieTitle.filter(movie => movie.toLowerCase().includes(value));
+    //Checks if a suggestion is clicked, if yes add the clicked value into the input field
     filteredMovies.forEach(movie => {
         const option = document.createElement("p");
         option.textContent = movie;
@@ -38,11 +45,13 @@ movieInput.addEventListener("input", () => {
     });
 })
 
-
+//Select the form and check if the submit button is clicked
 const form = document.querySelector("#feedback-form");
 form.addEventListener("submit" , (event) => {
+    //Alter the default execution style
     event.preventDefault();
 
+    //Reset the errors
     document.querySelector("#fNameError").textContent = "";
     document.querySelector("#lNameError").textContent = "";
     document.querySelector("#emailError").textContent = "";
@@ -52,6 +61,7 @@ form.addEventListener("submit" , (event) => {
     document.querySelector("#ratingError").textContent = "";
     document.querySelector("#recommendError").textContent = "";
 
+    //Select the relevant fields and initialize the isValid variable
     const fName = document.querySelector("#fName").value.trim();
     const lName = document.querySelector("#lName").value.trim();
     const email = document.querySelector("#email").value.trim();
@@ -62,6 +72,8 @@ form.addEventListener("submit" , (event) => {
     const recommendation = document.querySelector('input[name="recommendation"]:checked');
     var isValid = true;
 
+    //Check if the entered value is empty or against valid values or formats
+    //If illegal value is entered then display error
     if(fName == ""){
         document.querySelector("#fNameError").textContent = "Please enter your first name !";
         isValid = false;
@@ -96,6 +108,7 @@ form.addEventListener("submit" , (event) => {
         isValid = false;
     }
 
+    //If valid display to the user success message and reset errors to empty
     if(!isValid){ return; }
     alert("Review submitted successfully!");
     form.reset();

@@ -1,7 +1,9 @@
+//Selecting the relavent elements
 const filters = document.querySelectorAll(".filter");
 const allGenres = document.querySelector(".all-genre");
 const movieContainer = document.querySelector("#movies-container");
 
+//This function loads the movies and then create the movie cards
 function movieLoader (){
     fetch("Data/Movies.xml")
     .then(input => {
@@ -14,6 +16,7 @@ function movieLoader (){
         const xml = parser.parseFromString(data , "application/xml");
         const movies = xml.getElementsByTagName("movie");
         for (let movie of movies){
+            //Selecting the relavent attributes from the XML file
             const title = movie.querySelector("title").textContent;
             const genre = movie.querySelector("genre").textContent;
             const year = movie.querySelector("year").textContent;
@@ -21,6 +24,7 @@ function movieLoader (){
             const rating = movie.querySelector("rating").textContent;
             const image = movie.querySelector("image").textContent;
             const alt = movie.querySelector("alt").textContent;
+            //Creating the movie card
             movieContainer.innerHTML += `
             <div class = "movie-card" data-genre = "${genre}">
                     <div class = "image-container">
@@ -41,16 +45,21 @@ function movieLoader (){
                 </div>
             `;
         }
+        //Check if the movie page was loaded through the redirect of a search
+        //Define the search format and obtain the search value
         const param = new URLSearchParams(window.location.search);
         const search = param.get("search");
         if (search){
             document.querySelector(".movie-search").value = search;
+            //Call search function
             searchMovie(search);
         }
     });
 
 }
 
+//This function will read the movies and update the relevant movies according to the active filters by toggling the visibility
+//through class attributes
 function updateMovies (){
     const movies = document.querySelectorAll(".movie-card");
     const activeFilters = document.querySelectorAll(".filter.active");
@@ -72,33 +81,7 @@ function updateMovies (){
     });
 }
 
-filters.forEach(button => {
-    button.addEventListener("click" , () => {
-        if (button == allGenres){
-            filters.forEach(btn => {
-                btn.classList.remove("active");
-            });
-            button.classList.add("active");
-        }else{
-            allGenres.classList.remove("active");
-            button.classList.toggle("active");
-
-            const activeFilters = document.querySelectorAll(".filter.active");
-            if (activeFilters.length == filters.length - 1){
-                filters.forEach(btn => {
-                    btn.classList.remove("active");
-                })
-                allGenres.classList.add("active");
-            }
-        }
-        const activeFilters = document.querySelectorAll(".filter.active");
-        if (activeFilters.length == 0){
-            allGenres.classList.add("active");
-        }
-        updateMovies();
-    });
-});
-
+//This function will search whether there are movies including the entered values and hide or show different movie cards accordingly
 function searchMovie(searchTerm){
     const movies = document.querySelectorAll(".movie-card");
     movies.forEach(movie => {
@@ -110,8 +93,44 @@ function searchMovie(searchTerm){
     });
 }
 
+//Check if any filter button is clicked
+filters.forEach(button => {
+    button.addEventListener("click" , () => {
+        //Sets only all genre to active state
+        if (button == allGenres){
+            filters.forEach(btn => {
+                btn.classList.remove("active");
+            });
+            button.classList.add("active");
+        }else{
+            //All genre is deactivated while the clicked one is activated
+            allGenres.classList.remove("active");
+            button.classList.toggle("active");
+
+            //Checks if all filters excluding all genre is active, then default to all genre
+            const activeFilters = document.querySelectorAll(".filter.active");
+            if (activeFilters.length == filters.length - 1){
+                filters.forEach(btn => {
+                    btn.classList.remove("active");
+                })
+                allGenres.classList.add("active");
+            }
+        }
+
+        //If none of the filters are active, then default to all genre
+        const activeFilters = document.querySelectorAll(".filter.active");
+        if (activeFilters.length == 0){
+            allGenres.classList.add("active");
+        }
+        //Call the update movie function
+        updateMovies();
+    });
+});
+
+//Call the movie loader
 movieLoader();
 
+//Obtain the search term and filter movies accordingly
 const movieSearch = document.querySelector("#movie-search");
 movieSearch.addEventListener("input", () => {
     searchMovie(movieSearch.value.trim())
