@@ -608,7 +608,7 @@ form > div {
     background-color :var(--accent-red);
     font-family: var(--font-heading);
     font-size :var(--fs-button);
-    font-weight :bold;
+    font-weight :10px;
     color :var(--text-white);
     display: flex;
     align-items: center;
